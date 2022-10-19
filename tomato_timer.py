@@ -69,7 +69,7 @@ class TomatoTimer:
         btnStop = Button(self._root, text='Stop', bd='5', fg="blue", command= self.pause)
         btnStop.place(x = 140,y = y_value)
 
-        btnReset = Button(self._root, text='Reset', bd='5', fg="red", command= self.stop)
+        btnReset = Button(self._root, text='Reset', bd='5', fg="red", command= self.reset)
         btnReset.place(x = 200,y = y_value)
 
     def stay_on_top(self):
@@ -82,7 +82,7 @@ class TomatoTimer:
         self._root.mainloop()
 
 
-    def stop(self):
+    def reset(self):
         self._started = False
         self.set_time()
 
